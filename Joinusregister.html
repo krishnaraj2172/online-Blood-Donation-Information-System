@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JoinUs</title>
+	<link rel="stylesheet" type="text/css" href="joinusregister.css">
+	<link rel="stylesheet" type="text/css" href="static/homestyle.css">
+	<script type="text/javascript" defer src="formvalidation.js" ></script>
+</head>
+<body>
+	 <div class="topnav" id="topnav" >
+      <a href="login.html">Admin login</a>
+      <a href="#checkavail">Check Availability</a>
+      <a href="joinus.html">Join Us</a>
+      <a href="#members">Our Members</a>
+      <a href="about.html">About Us</a>
+      <a href="home.html">Home</a>
+  	</div>
+	<form id="form" action="rough.html" method="post">
+		<div class="container">
+			<div align="center">
+				<img src="static/register.png" class="img img-responsive">
+			</div>
+			<div>
+				<center><h3>
+				Join our community and reach out your hands for the others in need. Just by registering below you will make an agreement with us that you are ready to donate and will be available whenever we will need you.</h3>
+			</center>
+			</div>
+			
+			<center><h1>Register as a blood donor</h1></center>
+			<hr>
+			<br>
+			<div id="error"> </div>
+			<br>
+			<hr>
+			<label> Name </label>   
+			<input type="text" id="firstname" name="firstname" placeholder= "Firstname" size="15" >  
+			<input type="text" name="middlename" placeholder="Middlename" size="15" >   
+			<input type="text" name="lastname" placeholder="Lastname" size="15" >   
+
+			<div>
+				<label>D.O.B</label>
+				<input type="date" name="dob" placeholder="dob" size="15"  >
+			</div>
+
+			<div>
+				<label>Email</label>
+				<input type="email"  id="email" name="email" placeholder="email" size="15" required >
+			</div>
+
+			<div>
+				<label>Gender</label>
+				<input type="radio" name="gender" value="male" >male
+				<input type="radio" name="gender" value="female" >female
+				<input type="radio" value="Other" name="gender"> Other
+			</div>
+
+			<div>
+				<label>Blood Group</label>
+				<div>
+					<select>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>           
+					</select>
+				</div>
+			</div>
+			<div>
+				<label>Address</label>
+				<div>
+				<textarea  minlength="5"  placeholder="Please fill out your complete address." rows="6" name="address" >
+				</textarea>
+				</div>
+			</div>
+
+			<div>
+				<label>City</label>
+				<input type="city" name="city" placeholder="cityname" >
+			</div>
+
+			<div>
+				<label>Mobile no.</label>
+				<input type="text" name="mno" id="mno" placeholder="enter your 10 digit mobile no." required>
+			</div>
+
+			<div>
+				<button type="submit" name="registerbtn" class="registerbtn" >Join</button>
+				<button type="reset" class="resetbtn">reset</button>
+				
+			</div>
+			<br>
+			
+		</div>
+	</form>
+	
+
+</body>
+</html>
